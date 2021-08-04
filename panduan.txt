@@ -1,0 +1,32 @@
+#api:
+https://github.com/sutanlab/quran-api
+#audio:
+https://github.com/bachors/Al-Quran-ID-API
+
+#framework: CI4
+
+#routes:
+#homepage:
+<domain>
+#all:
+<domain>/surat
+#spesifik surat:
+<domain>/surat/<urutan surat>
+#spesifik ayat:
+<domain>/ayat/<urutan surat>/<ayat ke>
+#info surat:
+<domain>/surat/info/<urutan surat>
+
+$routes->get('/', 'Home::index');
+$routes->get('/surat', 'Quran::index');
+$routes->get('/surat/(:num)', 'Quran::surat/$1/');
+$routes->get('/ayat/(:num)/(:num)', 'Quran::ayat/$1/$2');
+$routes->get('/surat/info/(:num)', 'Quran::info/$1');
+
+
+#class:
+Quran
+
+#hosting: infinity free
+pswd: arfian.app
+email: arfian.app@gmail.com

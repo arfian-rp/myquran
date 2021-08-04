@@ -1,0 +1,23 @@
+.konten{
+  font-family: sans-serif;
+}
+.title{
+  cursor:pointer
+}
+.surat {
+  text-align: center;
+  cursor:pointer
+}
+.arabic{
+  font-size: 125%;
+  font-family: 'Scheherazade', serif;
+}
+.latin{
+  font-style: italic;
+}
+table>tbody>tr>*{
+  vertical-align: middle;
+}
+audio{
+  width: 250px;
+}
